@@ -29,56 +29,75 @@ namespace Program_I
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblSaludo = new System.Windows.Forms.Label();
-            this.btnSaludar = new System.Windows.Forms.Button();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblnum1 = new System.Windows.Forms.Label();
+            this.lblnum2 = new System.Windows.Forms.Label();
+            this.lblrespuesta = new System.Windows.Forms.Label();
+            this.btncalcular = new System.Windows.Forms.Button();
+            this.txtnum1 = new System.Windows.Forms.TextBox();
+            this.txtnum2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // lblNombre
+            // lblnum1
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(103, 93);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(62, 17);
-            this.lblNombre.TabIndex = 0;
-            this.lblNombre.Text = "Nombre:";
+            this.lblnum1.AutoSize = true;
+            this.lblnum1.Location = new System.Drawing.Point(73, 88);
+            this.lblnum1.Name = "lblnum1";
+            this.lblnum1.Size = new System.Drawing.Size(53, 17);
+            this.lblnum1.TabIndex = 0;
+            this.lblnum1.Text = "Num 1:";
             // 
-            // lblSaludo
+            // lblnum2
             // 
-            this.lblSaludo.AutoSize = true;
-            this.lblSaludo.Location = new System.Drawing.Point(103, 374);
-            this.lblSaludo.Name = "lblSaludo";
-            this.lblSaludo.Size = new System.Drawing.Size(37, 17);
-            this.lblSaludo.TabIndex = 1;
-            this.lblSaludo.Text = "Hola";
+            this.lblnum2.AutoSize = true;
+            this.lblnum2.Location = new System.Drawing.Point(73, 148);
+            this.lblnum2.Name = "lblnum2";
+            this.lblnum2.Size = new System.Drawing.Size(53, 17);
+            this.lblnum2.TabIndex = 1;
+            this.lblnum2.Text = "Num 2:";
             // 
-            // btnSaludar
+            // lblrespuesta
             // 
-            this.btnSaludar.Location = new System.Drawing.Point(253, 215);
-            this.btnSaludar.Name = "btnSaludar";
-            this.btnSaludar.Size = new System.Drawing.Size(195, 86);
-            this.btnSaludar.TabIndex = 2;
-            this.btnSaludar.Text = "Saludar";
-            this.btnSaludar.UseVisualStyleBackColor = true;
-            this.btnSaludar.Click += new System.EventHandler(this.btnSaludar_Click);
+            this.lblrespuesta.AutoSize = true;
+            this.lblrespuesta.Location = new System.Drawing.Point(241, 231);
+            this.lblrespuesta.Name = "lblrespuesta";
+            this.lblrespuesta.Size = new System.Drawing.Size(88, 17);
+            this.lblrespuesta.TabIndex = 2;
+            this.lblrespuesta.Text = "Respuesta : ";
             // 
-            // txtNombre
+            // btncalcular
             // 
-            this.txtNombre.Location = new System.Drawing.Point(213, 90);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(262, 22);
-            this.txtNombre.TabIndex = 3;
+            this.btncalcular.Location = new System.Drawing.Point(190, 303);
+            this.btncalcular.Name = "btncalcular";
+            this.btncalcular.Size = new System.Drawing.Size(185, 91);
+            this.btncalcular.TabIndex = 3;
+            this.btncalcular.Text = "Calcular";
+            this.btncalcular.UseVisualStyleBackColor = true;
+            // 
+            // txtnum1
+            // 
+            this.txtnum1.Location = new System.Drawing.Point(165, 88);
+            this.txtnum1.Name = "txtnum1";
+            this.txtnum1.Size = new System.Drawing.Size(308, 22);
+            this.txtnum1.TabIndex = 4;
+            // 
+            // txtnum2
+            // 
+            this.txtnum2.Location = new System.Drawing.Point(165, 145);
+            this.txtnum2.Name = "txtnum2";
+            this.txtnum2.Size = new System.Drawing.Size(308, 22);
+            this.txtnum2.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 477);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.btnSaludar);
-            this.Controls.Add(this.lblSaludo);
-            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.txtnum2);
+            this.Controls.Add(this.txtnum1);
+            this.Controls.Add(this.btncalcular);
+            this.Controls.Add(this.lblrespuesta);
+            this.Controls.Add(this.lblnum2);
+            this.Controls.Add(this.lblnum1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -88,10 +107,12 @@ namespace Program_I
 
         #endregion
 
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblSaludo;
-        private System.Windows.Forms.Button btnSaludar;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label lblnum1;
+        private System.Windows.Forms.Label lblnum2;
+        private System.Windows.Forms.Label lblrespuesta;
+        private System.Windows.Forms.Button btncalcular;
+        private System.Windows.Forms.TextBox txtnum1;
+        private System.Windows.Forms.TextBox txtnum2;
     }
 }
 

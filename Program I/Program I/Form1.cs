@@ -16,10 +16,15 @@ namespace Program_I
         {
             InitializeComponent();
         }
+        private void btncalcular_Click(object sender, EventArgs e)
+         {
+            double num1, num2, respuesta;
+            num1 = Double.Parse(txtnum1.Text);
+            num2 = Double.Parse(txtnum2.Text);
+            respuesta = num1 + num2;
 
-        private void btnSaludar_Click(object sender, EventArgs e)
-        {
-            lblSaludo.Text = "¡Hola, " + txtNombre.Text + "!";
+            lblrespuesta.Text = "Respuesta: " + respuesta;
         }
+        
     }
 }
