@@ -36,15 +36,16 @@ namespace Program_I
             this.txtnum1 = new System.Windows.Forms.TextBox();
             this.txtnum2 = new System.Windows.Forms.TextBox();
             this.grpopciones = new System.Windows.Forms.GroupBox();
-            this.optsuma = new System.Windows.Forms.RadioButton();
-            this.optresta = new System.Windows.Forms.RadioButton();
-            this.optmulti = new System.Windows.Forms.RadioButton();
-            this.optdivi = new System.Windows.Forms.RadioButton();
-            this.optexponente = new System.Windows.Forms.RadioButton();
-            this.optporcentaje = new System.Windows.Forms.RadioButton();
             this.optfacto = new System.Windows.Forms.RadioButton();
+            this.optporcentaje = new System.Windows.Forms.RadioButton();
+            this.optexponente = new System.Windows.Forms.RadioButton();
+            this.optdivi = new System.Windows.Forms.RadioButton();
+            this.optmulti = new System.Windows.Forms.RadioButton();
+            this.optresta = new System.Windows.Forms.RadioButton();
+            this.optsuma = new System.Windows.Forms.RadioButton();
             this.cboopciones = new System.Windows.Forms.ComboBox();
             this.btncalcularopciones = new System.Windows.Forms.Button();
+            this.optprimo = new System.Windows.Forms.RadioButton();
             this.grpopciones.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,6 +101,7 @@ namespace Program_I
             // 
             // grpopciones
             // 
+            this.grpopciones.Controls.Add(this.optprimo);
             this.grpopciones.Controls.Add(this.optfacto);
             this.grpopciones.Controls.Add(this.optporcentaje);
             this.grpopciones.Controls.Add(this.optexponente);
@@ -114,77 +116,77 @@ namespace Program_I
             this.grpopciones.TabStop = false;
             this.grpopciones.Text = "Opciones";
             // 
-            // optsuma
+            // optfacto
             // 
-            this.optsuma.AutoSize = true;
-            this.optsuma.Checked = true;
-            this.optsuma.Location = new System.Drawing.Point(19, 61);
-            this.optsuma.Name = "optsuma";
-            this.optsuma.Size = new System.Drawing.Size(63, 21);
-            this.optsuma.TabIndex = 0;
-            this.optsuma.TabStop = true;
-            this.optsuma.Text = "suma";
-            this.optsuma.UseVisualStyleBackColor = true;
-            // 
-            // optresta
-            // 
-            this.optresta.AutoSize = true;
-            this.optresta.Location = new System.Drawing.Point(19, 88);
-            this.optresta.Name = "optresta";
-            this.optresta.Size = new System.Drawing.Size(61, 21);
-            this.optresta.TabIndex = 1;
-            this.optresta.Text = "resta";
-            this.optresta.UseVisualStyleBackColor = true;
-            // 
-            // optmulti
-            // 
-            this.optmulti.AutoSize = true;
-            this.optmulti.Location = new System.Drawing.Point(19, 119);
-            this.optmulti.Name = "optmulti";
-            this.optmulti.Size = new System.Drawing.Size(58, 21);
-            this.optmulti.TabIndex = 2;
-            this.optmulti.Text = "multi";
-            this.optmulti.UseVisualStyleBackColor = true;
-            // 
-            // optdivi
-            // 
-            this.optdivi.AutoSize = true;
-            this.optdivi.Location = new System.Drawing.Point(19, 153);
-            this.optdivi.Name = "optdivi";
-            this.optdivi.Size = new System.Drawing.Size(76, 21);
-            this.optdivi.TabIndex = 3;
-            this.optdivi.Text = "division";
-            this.optdivi.UseVisualStyleBackColor = true;
-            // 
-            // optexponente
-            // 
-            this.optexponente.AutoSize = true;
-            this.optexponente.Location = new System.Drawing.Point(19, 185);
-            this.optexponente.Name = "optexponente";
-            this.optexponente.Size = new System.Drawing.Size(95, 21);
-            this.optexponente.TabIndex = 4;
-            this.optexponente.Text = "exponente";
-            this.optexponente.UseVisualStyleBackColor = true;
+            this.optfacto.AutoSize = true;
+            this.optfacto.Location = new System.Drawing.Point(16, 226);
+            this.optfacto.Name = "optfacto";
+            this.optfacto.Size = new System.Drawing.Size(79, 21);
+            this.optfacto.TabIndex = 6;
+            this.optfacto.Text = "factorial";
+            this.optfacto.UseVisualStyleBackColor = true;
             // 
             // optporcentaje
             // 
             this.optporcentaje.AutoSize = true;
-            this.optporcentaje.Location = new System.Drawing.Point(19, 222);
+            this.optporcentaje.Location = new System.Drawing.Point(16, 188);
             this.optporcentaje.Name = "optporcentaje";
             this.optporcentaje.Size = new System.Drawing.Size(96, 21);
             this.optporcentaje.TabIndex = 5;
             this.optporcentaje.Text = "porcentaje";
             this.optporcentaje.UseVisualStyleBackColor = true;
             // 
-            // optfacto
+            // optexponente
             // 
-            this.optfacto.AutoSize = true;
-            this.optfacto.Location = new System.Drawing.Point(19, 260);
-            this.optfacto.Name = "optfacto";
-            this.optfacto.Size = new System.Drawing.Size(79, 21);
-            this.optfacto.TabIndex = 6;
-            this.optfacto.Text = "factorial";
-            this.optfacto.UseVisualStyleBackColor = true;
+            this.optexponente.AutoSize = true;
+            this.optexponente.Location = new System.Drawing.Point(16, 151);
+            this.optexponente.Name = "optexponente";
+            this.optexponente.Size = new System.Drawing.Size(95, 21);
+            this.optexponente.TabIndex = 4;
+            this.optexponente.Text = "exponente";
+            this.optexponente.UseVisualStyleBackColor = true;
+            // 
+            // optdivi
+            // 
+            this.optdivi.AutoSize = true;
+            this.optdivi.Location = new System.Drawing.Point(16, 119);
+            this.optdivi.Name = "optdivi";
+            this.optdivi.Size = new System.Drawing.Size(76, 21);
+            this.optdivi.TabIndex = 3;
+            this.optdivi.Text = "division";
+            this.optdivi.UseVisualStyleBackColor = true;
+            // 
+            // optmulti
+            // 
+            this.optmulti.AutoSize = true;
+            this.optmulti.Location = new System.Drawing.Point(16, 85);
+            this.optmulti.Name = "optmulti";
+            this.optmulti.Size = new System.Drawing.Size(58, 21);
+            this.optmulti.TabIndex = 2;
+            this.optmulti.Text = "multi";
+            this.optmulti.UseVisualStyleBackColor = true;
+            // 
+            // optresta
+            // 
+            this.optresta.AutoSize = true;
+            this.optresta.Location = new System.Drawing.Point(16, 54);
+            this.optresta.Name = "optresta";
+            this.optresta.Size = new System.Drawing.Size(61, 21);
+            this.optresta.TabIndex = 1;
+            this.optresta.Text = "resta";
+            this.optresta.UseVisualStyleBackColor = true;
+            // 
+            // optsuma
+            // 
+            this.optsuma.AutoSize = true;
+            this.optsuma.Checked = true;
+            this.optsuma.Location = new System.Drawing.Point(16, 27);
+            this.optsuma.Name = "optsuma";
+            this.optsuma.Size = new System.Drawing.Size(63, 21);
+            this.optsuma.TabIndex = 0;
+            this.optsuma.TabStop = true;
+            this.optsuma.Text = "suma";
+            this.optsuma.UseVisualStyleBackColor = true;
             // 
             // cboopciones
             // 
@@ -197,7 +199,8 @@ namespace Program_I
             "division",
             "exponecioasion",
             "porcentaje",
-            "factorial"});
+            "factorial",
+            "Primo"});
             this.cboopciones.Location = new System.Drawing.Point(741, 57);
             this.cboopciones.Name = "cboopciones";
             this.cboopciones.Size = new System.Drawing.Size(218, 24);
@@ -212,6 +215,16 @@ namespace Program_I
             this.btncalcularopciones.Text = "Calcular";
             this.btncalcularopciones.UseVisualStyleBackColor = true;
             this.btncalcularopciones.Click += new System.EventHandler(this.btncalcularopciones_Click);
+            // 
+            // optprimo
+            // 
+            this.optprimo.AutoSize = true;
+            this.optprimo.Location = new System.Drawing.Point(16, 253);
+            this.optprimo.Name = "optprimo";
+            this.optprimo.Size = new System.Drawing.Size(64, 21);
+            this.optprimo.TabIndex = 7;
+            this.optprimo.Text = "primo";
+            this.optprimo.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -254,6 +267,7 @@ namespace Program_I
         private System.Windows.Forms.RadioButton optfacto;
         private System.Windows.Forms.ComboBox cboopciones;
         private System.Windows.Forms.Button btncalcularopciones;
+        private System.Windows.Forms.RadioButton optprimo;
     }
 }
 

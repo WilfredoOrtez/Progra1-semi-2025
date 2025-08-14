@@ -50,6 +50,39 @@ namespace Program_I
             {
                 respuesta = (num1 / num2) * 100;
             }
+
+            if (optfacto.Checked)
+            {
+                respuesta = (int)num1;
+                for(int i = (int)num1; i>1; i--)
+                {
+                    respuesta *= i;
+                }
+            }
+
+            lblrespuesta.Text = "Respuesta: " + respuesta;
+
+            if (optprimo.Checked)
+            {
+                int i = 1, acum = 0;
+                while (i <= num1 & acum < 3) 
+                {
+                    if (num1 % 1 == 0){
+                        acum++;
+                    }
+                    i++;
+                }
+                if (acum <= 2)
+                {
+                    lblrespuesta.Text = "Respuesta" + num1 + " es primo";
+                }
+                else
+                {
+                    lblrespuesta.Text = "Respuesta" + num1 + " No es primo";
+                }
+
+            }
+
             lblrespuesta.Text = "respuesta: " + respuesta;
         }
 
