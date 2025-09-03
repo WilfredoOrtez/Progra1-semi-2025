@@ -29,221 +29,99 @@ namespace Program_I
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblnum1 = new System.Windows.Forms.Label();
-            this.lblnum2 = new System.Windows.Forms.Label();
-            this.lblrespuesta = new System.Windows.Forms.Label();
-            this.btncalcular = new System.Windows.Forms.Button();
-            this.txtnum1 = new System.Windows.Forms.TextBox();
-            this.txtnum2 = new System.Windows.Forms.TextBox();
-            this.grpopciones = new System.Windows.Forms.GroupBox();
-            this.optfacto = new System.Windows.Forms.RadioButton();
-            this.optporcentaje = new System.Windows.Forms.RadioButton();
-            this.optexponente = new System.Windows.Forms.RadioButton();
-            this.optdivi = new System.Windows.Forms.RadioButton();
-            this.optmulti = new System.Windows.Forms.RadioButton();
-            this.optresta = new System.Windows.Forms.RadioButton();
-            this.optsuma = new System.Windows.Forms.RadioButton();
-            this.cboopciones = new System.Windows.Forms.ComboBox();
-            this.btncalcularopciones = new System.Windows.Forms.Button();
-            this.optprimo = new System.Windows.Forms.RadioButton();
-            this.grpopciones.SuspendLayout();
+            this.lblPie_Cuadrado = new System.Windows.Forms.Label();
+            this.lblinicio = new System.Windows.Forms.Label();
+            this.cboOrigen = new System.Windows.Forms.ComboBox();
+            this.txtNum1 = new System.Windows.Forms.TextBox();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.cboAconv = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // lblnum1
+            // lblPie_Cuadrado
             // 
-            this.lblnum1.AutoSize = true;
-            this.lblnum1.Location = new System.Drawing.Point(27, 35);
-            this.lblnum1.Name = "lblnum1";
-            this.lblnum1.Size = new System.Drawing.Size(53, 17);
-            this.lblnum1.TabIndex = 0;
-            this.lblnum1.Text = "Num 1:";
+            this.lblPie_Cuadrado.AutoSize = true;
+            this.lblPie_Cuadrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPie_Cuadrado.Location = new System.Drawing.Point(67, 284);
+            this.lblPie_Cuadrado.Name = "lblPie_Cuadrado";
+            this.lblPie_Cuadrado.Size = new System.Drawing.Size(131, 24);
+            this.lblPie_Cuadrado.TabIndex = 0;
+            this.lblPie_Cuadrado.Text = "Respuesta: ?";
             // 
-            // lblnum2
+            // lblinicio
             // 
-            this.lblnum2.AutoSize = true;
-            this.lblnum2.Location = new System.Drawing.Point(27, 95);
-            this.lblnum2.Name = "lblnum2";
-            this.lblnum2.Size = new System.Drawing.Size(53, 17);
-            this.lblnum2.TabIndex = 1;
-            this.lblnum2.Text = "Num 2:";
+            this.lblinicio.AutoSize = true;
+            this.lblinicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblinicio.Location = new System.Drawing.Point(215, 46);
+            this.lblinicio.Name = "lblinicio";
+            this.lblinicio.Size = new System.Drawing.Size(306, 25);
+            this.lblinicio.TabIndex = 7;
+            this.lblinicio.Text = "Conversor de area (superficie)";
             // 
-            // lblrespuesta
+            // cboOrigen
             // 
-            this.lblrespuesta.AutoSize = true;
-            this.lblrespuesta.Location = new System.Drawing.Point(195, 178);
-            this.lblrespuesta.Name = "lblrespuesta";
-            this.lblrespuesta.Size = new System.Drawing.Size(88, 17);
-            this.lblrespuesta.TabIndex = 2;
-            this.lblrespuesta.Text = "Respuesta : ";
+            this.cboOrigen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboOrigen.FormattingEnabled = true;
+            this.cboOrigen.Items.AddRange(new object[] {
+            "Pie Cuadrado",
+            "Vara Cuadrada",
+            "Yarda cuadrada",
+            "Metro Cuadrado",
+            "Tareas",
+            "Manzana",
+            "Hectareas"});
+            this.cboOrigen.Location = new System.Drawing.Point(461, 130);
+            this.cboOrigen.Name = "cboOrigen";
+            this.cboOrigen.Size = new System.Drawing.Size(184, 24);
+            this.cboOrigen.TabIndex = 8;
             // 
-            // btncalcular
+            // txtNum1
             // 
-            this.btncalcular.Location = new System.Drawing.Point(144, 250);
-            this.btncalcular.Name = "btncalcular";
-            this.btncalcular.Size = new System.Drawing.Size(185, 91);
-            this.btncalcular.TabIndex = 3;
-            this.btncalcular.Text = "Calcular";
-            this.btncalcular.UseVisualStyleBackColor = true;
+            this.txtNum1.Location = new System.Drawing.Point(233, 130);
+            this.txtNum1.Name = "txtNum1";
+            this.txtNum1.Size = new System.Drawing.Size(186, 22);
+            this.txtNum1.TabIndex = 9;
             // 
-            // txtnum1
+            // btnCalcular
             // 
-            this.txtnum1.Location = new System.Drawing.Point(119, 35);
-            this.txtnum1.Name = "txtnum1";
-            this.txtnum1.Size = new System.Drawing.Size(308, 22);
-            this.txtnum1.TabIndex = 4;
+            this.btnCalcular.Location = new System.Drawing.Point(411, 244);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(209, 152);
+            this.btnCalcular.TabIndex = 10;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // txtnum2
+            // cboAconv
             // 
-            this.txtnum2.Location = new System.Drawing.Point(119, 92);
-            this.txtnum2.Name = "txtnum2";
-            this.txtnum2.Size = new System.Drawing.Size(308, 22);
-            this.txtnum2.TabIndex = 5;
-            // 
-            // grpopciones
-            // 
-            this.grpopciones.Controls.Add(this.optprimo);
-            this.grpopciones.Controls.Add(this.optfacto);
-            this.grpopciones.Controls.Add(this.optporcentaje);
-            this.grpopciones.Controls.Add(this.optexponente);
-            this.grpopciones.Controls.Add(this.optdivi);
-            this.grpopciones.Controls.Add(this.optmulti);
-            this.grpopciones.Controls.Add(this.optresta);
-            this.grpopciones.Controls.Add(this.optsuma);
-            this.grpopciones.Location = new System.Drawing.Point(465, 44);
-            this.grpopciones.Name = "grpopciones";
-            this.grpopciones.Size = new System.Drawing.Size(200, 297);
-            this.grpopciones.TabIndex = 6;
-            this.grpopciones.TabStop = false;
-            this.grpopciones.Text = "Opciones";
-            // 
-            // optfacto
-            // 
-            this.optfacto.AutoSize = true;
-            this.optfacto.Location = new System.Drawing.Point(16, 226);
-            this.optfacto.Name = "optfacto";
-            this.optfacto.Size = new System.Drawing.Size(79, 21);
-            this.optfacto.TabIndex = 6;
-            this.optfacto.Text = "factorial";
-            this.optfacto.UseVisualStyleBackColor = true;
-            // 
-            // optporcentaje
-            // 
-            this.optporcentaje.AutoSize = true;
-            this.optporcentaje.Location = new System.Drawing.Point(16, 188);
-            this.optporcentaje.Name = "optporcentaje";
-            this.optporcentaje.Size = new System.Drawing.Size(96, 21);
-            this.optporcentaje.TabIndex = 5;
-            this.optporcentaje.Text = "porcentaje";
-            this.optporcentaje.UseVisualStyleBackColor = true;
-            // 
-            // optexponente
-            // 
-            this.optexponente.AutoSize = true;
-            this.optexponente.Location = new System.Drawing.Point(16, 151);
-            this.optexponente.Name = "optexponente";
-            this.optexponente.Size = new System.Drawing.Size(95, 21);
-            this.optexponente.TabIndex = 4;
-            this.optexponente.Text = "exponente";
-            this.optexponente.UseVisualStyleBackColor = true;
-            // 
-            // optdivi
-            // 
-            this.optdivi.AutoSize = true;
-            this.optdivi.Location = new System.Drawing.Point(16, 119);
-            this.optdivi.Name = "optdivi";
-            this.optdivi.Size = new System.Drawing.Size(76, 21);
-            this.optdivi.TabIndex = 3;
-            this.optdivi.Text = "division";
-            this.optdivi.UseVisualStyleBackColor = true;
-            // 
-            // optmulti
-            // 
-            this.optmulti.AutoSize = true;
-            this.optmulti.Location = new System.Drawing.Point(16, 85);
-            this.optmulti.Name = "optmulti";
-            this.optmulti.Size = new System.Drawing.Size(58, 21);
-            this.optmulti.TabIndex = 2;
-            this.optmulti.Text = "multi";
-            this.optmulti.UseVisualStyleBackColor = true;
-            // 
-            // optresta
-            // 
-            this.optresta.AutoSize = true;
-            this.optresta.Location = new System.Drawing.Point(16, 54);
-            this.optresta.Name = "optresta";
-            this.optresta.Size = new System.Drawing.Size(61, 21);
-            this.optresta.TabIndex = 1;
-            this.optresta.Text = "resta";
-            this.optresta.UseVisualStyleBackColor = true;
-            // 
-            // optsuma
-            // 
-            this.optsuma.AutoSize = true;
-            this.optsuma.Checked = true;
-            this.optsuma.Location = new System.Drawing.Point(16, 27);
-            this.optsuma.Name = "optsuma";
-            this.optsuma.Size = new System.Drawing.Size(63, 21);
-            this.optsuma.TabIndex = 0;
-            this.optsuma.TabStop = true;
-            this.optsuma.Text = "suma";
-            this.optsuma.UseVisualStyleBackColor = true;
-            // 
-            // cboopciones
-            // 
-            this.cboopciones.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboopciones.FormattingEnabled = true;
-            this.cboopciones.Items.AddRange(new object[] {
-            "suma",
-            "resta",
-            "multiplicacion",
-            "division",
-            "exponecioasion",
-            "porcentaje",
-            "factorial",
-            "Primo"});
-            this.cboopciones.Location = new System.Drawing.Point(741, 57);
-            this.cboopciones.Name = "cboopciones";
-            this.cboopciones.Size = new System.Drawing.Size(218, 24);
-            this.cboopciones.TabIndex = 7;
-            // 
-            // btncalcularopciones
-            // 
-            this.btncalcularopciones.Location = new System.Drawing.Point(757, 97);
-            this.btncalcularopciones.Name = "btncalcularopciones";
-            this.btncalcularopciones.Size = new System.Drawing.Size(185, 91);
-            this.btncalcularopciones.TabIndex = 8;
-            this.btncalcularopciones.Text = "Calcular";
-            this.btncalcularopciones.UseVisualStyleBackColor = true;
-            this.btncalcularopciones.Click += new System.EventHandler(this.btncalcularopciones_Click);
-            // 
-            // optprimo
-            // 
-            this.optprimo.AutoSize = true;
-            this.optprimo.Location = new System.Drawing.Point(16, 253);
-            this.optprimo.Name = "optprimo";
-            this.optprimo.Size = new System.Drawing.Size(64, 21);
-            this.optprimo.TabIndex = 7;
-            this.optprimo.Text = "primo";
-            this.optprimo.UseVisualStyleBackColor = true;
+            this.cboAconv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAconv.FormattingEnabled = true;
+            this.cboAconv.Items.AddRange(new object[] {
+            "Pie Cuadrado",
+            "Vara Cuadrada",
+            "Yarda cuadrada",
+            "Metro Cuadrado",
+            "Tareas",
+            "Manzana",
+            "Hectareas"});
+            this.cboAconv.Location = new System.Drawing.Point(461, 173);
+            this.cboAconv.Name = "cboAconv";
+            this.cboAconv.Size = new System.Drawing.Size(184, 24);
+            this.cboAconv.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 377);
-            this.Controls.Add(this.btncalcularopciones);
-            this.Controls.Add(this.cboopciones);
-            this.Controls.Add(this.grpopciones);
-            this.Controls.Add(this.txtnum2);
-            this.Controls.Add(this.txtnum1);
-            this.Controls.Add(this.btncalcular);
-            this.Controls.Add(this.lblrespuesta);
-            this.Controls.Add(this.lblnum2);
-            this.Controls.Add(this.lblnum1);
+            this.ClientSize = new System.Drawing.Size(757, 509);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.txtNum1);
+            this.Controls.Add(this.cboAconv);
+            this.Controls.Add(this.cboOrigen);
+            this.Controls.Add(this.lblinicio);
+            this.Controls.Add(this.lblPie_Cuadrado);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.grpopciones.ResumeLayout(false);
-            this.grpopciones.PerformLayout();
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,23 +129,12 @@ namespace Program_I
 
         #endregion
 
-        private System.Windows.Forms.Label lblnum1;
-        private System.Windows.Forms.Label lblnum2;
-        private System.Windows.Forms.Label lblrespuesta;
-        private System.Windows.Forms.Button btncalcular;
-        private System.Windows.Forms.TextBox txtnum1;
-        private System.Windows.Forms.TextBox txtnum2;
-        private System.Windows.Forms.GroupBox grpopciones;
-        private System.Windows.Forms.RadioButton optdivi;
-        private System.Windows.Forms.RadioButton optmulti;
-        private System.Windows.Forms.RadioButton optresta;
-        private System.Windows.Forms.RadioButton optsuma;
-        private System.Windows.Forms.RadioButton optexponente;
-        private System.Windows.Forms.RadioButton optporcentaje;
-        private System.Windows.Forms.RadioButton optfacto;
-        private System.Windows.Forms.ComboBox cboopciones;
-        private System.Windows.Forms.Button btncalcularopciones;
-        private System.Windows.Forms.RadioButton optprimo;
+        private System.Windows.Forms.Label lblPie_Cuadrado;
+        private System.Windows.Forms.Label lblinicio;
+        private System.Windows.Forms.ComboBox cboOrigen;
+        private System.Windows.Forms.TextBox txtNum1;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.ComboBox cboAconv;
     }
 }
 

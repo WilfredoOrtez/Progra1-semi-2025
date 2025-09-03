@@ -16,101 +16,61 @@ namespace Program_I
         {
             InitializeComponent();
         }
-        private void btncalcular_Click(object sender, EventArgs e)
-         {
-            double num1, num2, respuesta = 0;
-            num1 = Double.Parse(txtnum1.Text);
-            num2 = Double.Parse(txtnum2.Text);
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
-            if (optsuma.Checked){
-                    respuesta = num1 + num2;
-             }
+        }
+        // Es esta matriz usamos loa valores de metro cuadrado como base 
+        private double[] conversiones = {10.7639/*Pie cuadrado*/, 1.431229426/*Vara cuadrada*/, 1.19599/*Yarda cuadrada*/, 1/*Metro cuadrado*/, 0.002285741/*Tarea*/, 0.000142857/*manzana*/, 0.00010/*hectarea*/ };
 
-            if (optresta.Checked)
+        public double conver(double cantidad, int origen, int a)
+        {
+
+            double respuesta = 0;
+            if (cantidad <= 0)
             {
-                respuesta = num1 - num2;
+                return 0;
             }
-
-            if (optmulti.Checked)
+            else
             {
-                respuesta = num1 * num2;
+                respuesta = cantidad * conversiones[a] / conversiones[origen];
+                return respuesta;
             }
-
-            if (optdivi.Checked)
-            {
-                respuesta = num1 / num2;
-            }
-
-            if (optexponente.Checked)
-            {
-                respuesta = Math.Pow(num1, num2);
-            }
-
-            if (optporcentaje.Checked)
-            {
-                respuesta = (num1 / num2) * 100;
-            }
-
-            if (optfacto.Checked)
-            {
-                respuesta = (int)num1;
-                for(int i = (int)num1; i>1; i--)
-                {
-                    respuesta *= i;
-                }
-            }
-
-            lblrespuesta.Text = "Respuesta: " + respuesta;
-
-            if (optprimo.Checked)
-            {
-                int i = 1, acum = 0;
-                while (i <= num1 & acum < 3) 
-                {
-                    if (num1 % 1 == 0){
-                        acum++;
-                    }
-                    i++;
-                }
-                if (acum <= 2)
-                {
-                    lblrespuesta.Text = "Respuesta" + num1 + " es primo";
-                }
-                else
-                {
-                    lblrespuesta.Text = "Respuesta" + num1 + " No es primo";
-                }
-
-            }
-
-            lblrespuesta.Text = "respuesta: " + respuesta;
+           
         }
 
-        private void btncalcularopciones_Click(object sender, EventArgs e)
+        private void btnCalcular_Click(object sender, EventArgs e)
         {
-            double num1, num2, respuesta = 0;
-            num1 = double.Parse(txtnum1.Text);
-            num2 = double.Parse(txtnum2.Text);
+            double cantidad = 0;
 
-            switch (cboopciones.SelectedIndex)
+            int origen = cboOrigen.SelectedIndex;
+
+            int a = cboAconv.SelectedIndex;
+
+            double respuesta = 0;
+            
+            if (string.IsNullOrWhiteSpace(txtNum1.Text))
             {
-                case 0:
-                    respuesta = num1 + num2;
-                    break;
-
-                case 1:
-                    respuesta = num1 - num2;
-                    break;
-
-                case 2:
-                    respuesta = num1 * num2;
-                    break;
-
-                case 3:
-                    respuesta = num1 / num2;
-                    break;
+                MessageBox.Show("Por favor, ingrese una cantidad válida.");
+                return;
             }
-            lblrespuesta.Text = "respuesta: " + respuesta;
+            
+            if (!double.TryParse(txtNum1.Text, out cantidad))
+            {
+                MessageBox.Show("La cantidad ingresada no es un número válido.");
+                return;
+            }
+
+            cantidad = double.Parse(txtNum1.Text); 
+            if (cboOrigen.SelectedIndex == -1)
+            {
+                MessageBox.Show("Por favor selecione la medida que desea");
+                return;
+            }
+            
+              respuesta = cantidad * conversiones[a] / conversiones[origen];
+              respuesta = Math.Round(respuesta, 2);
+              lblPie_Cuadrado.Text = "" + respuesta;
         }
     }
 }
