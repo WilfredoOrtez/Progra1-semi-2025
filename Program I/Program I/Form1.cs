@@ -16,15 +16,45 @@ namespace Program_I
         {
             InitializeComponent();
         }
-        private void btncalcular_Click(object sender, EventArgs e)
-         {
+        
+
+        private void btncalcularopciones_Click(object sender, EventArgs e)
+        {
+            double num1, num2, respuesta = 0;
+            num1 = double.Parse(txtnum1.Text);
+            num2 = double.Parse(txtnum2.Text);
+
+            switch (cboopciones.SelectedIndex)
+            {
+                case 0:
+                    respuesta = num1 + num2;
+                    break;
+
+                case 1:
+                    respuesta = num1 - num2;
+                    break;
+
+                case 2:
+                    respuesta = num1 * num2;
+                    break;
+
+                case 3:
+                    respuesta = num1 / num2;
+                    break;
+            }
+            lblrespuesta.Text = "respuesta: " + respuesta;
+        }
+
+        private void btncalcular_Click_1(object sender, EventArgs e)
+        {
             double num1, num2, respuesta = 0;
             num1 = Double.Parse(txtnum1.Text);
             num2 = Double.Parse(txtnum2.Text);
 
-            if (optsuma.Checked){
-                    respuesta = num1 + num2;
-             }
+            if (optsuma.Checked)
+            {
+                respuesta = num1 + num2;
+            }
 
             if (optresta.Checked)
             {
@@ -54,7 +84,7 @@ namespace Program_I
             if (optfacto.Checked)
             {
                 respuesta = (int)num1;
-                for(int i = (int)num1; i>1; i--)
+                for (int i = (int)num1; i > 1; i--)
                 {
                     respuesta *= i;
                 }
@@ -65,9 +95,10 @@ namespace Program_I
             if (optprimo.Checked)
             {
                 int i = 1, acum = 0;
-                while (i <= num1 & acum < 3) 
+                while (i <= num1 & acum < 3)
                 {
-                    if (num1 % 1 == 0){
+                    if (num1 % 1 == 0)
+                    {
                         acum++;
                     }
                     i++;
@@ -85,32 +116,6 @@ namespace Program_I
 
             lblrespuesta.Text = "respuesta: " + respuesta;
         }
-
-        private void btncalcularopciones_Click(object sender, EventArgs e)
-        {
-            double num1, num2, respuesta = 0;
-            num1 = double.Parse(txtnum1.Text);
-            num2 = double.Parse(txtnum2.Text);
-
-            switch (cboopciones.SelectedIndex)
-            {
-                case 0:
-                    respuesta = num1 + num2;
-                    break;
-
-                case 1:
-                    respuesta = num1 - num2;
-                    break;
-
-                case 2:
-                    respuesta = num1 * num2;
-                    break;
-
-                case 3:
-                    respuesta = num1 / num2;
-                    break;
-            }
-            lblrespuesta.Text = "respuesta: " + respuesta;
-        }
     }
+    
 }

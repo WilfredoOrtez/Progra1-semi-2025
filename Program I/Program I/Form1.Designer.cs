@@ -36,6 +36,7 @@ namespace Program_I
             this.txtnum1 = new System.Windows.Forms.TextBox();
             this.txtnum2 = new System.Windows.Forms.TextBox();
             this.grpopciones = new System.Windows.Forms.GroupBox();
+            this.optprimo = new System.Windows.Forms.RadioButton();
             this.optfacto = new System.Windows.Forms.RadioButton();
             this.optporcentaje = new System.Windows.Forms.RadioButton();
             this.optexponente = new System.Windows.Forms.RadioButton();
@@ -45,7 +46,6 @@ namespace Program_I
             this.optsuma = new System.Windows.Forms.RadioButton();
             this.cboopciones = new System.Windows.Forms.ComboBox();
             this.btncalcularopciones = new System.Windows.Forms.Button();
-            this.optprimo = new System.Windows.Forms.RadioButton();
             this.grpopciones.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +84,7 @@ namespace Program_I
             this.btncalcular.TabIndex = 3;
             this.btncalcular.Text = "Calcular";
             this.btncalcular.UseVisualStyleBackColor = true;
+            this.btncalcular.Click += new System.EventHandler(this.btncalcular_Click_1);
             // 
             // txtnum1
             // 
@@ -115,6 +116,16 @@ namespace Program_I
             this.grpopciones.TabIndex = 6;
             this.grpopciones.TabStop = false;
             this.grpopciones.Text = "Opciones";
+            // 
+            // optprimo
+            // 
+            this.optprimo.AutoSize = true;
+            this.optprimo.Location = new System.Drawing.Point(16, 253);
+            this.optprimo.Name = "optprimo";
+            this.optprimo.Size = new System.Drawing.Size(64, 21);
+            this.optprimo.TabIndex = 7;
+            this.optprimo.Text = "primo";
+            this.optprimo.UseVisualStyleBackColor = true;
             // 
             // optfacto
             // 
@@ -215,16 +226,6 @@ namespace Program_I
             this.btncalcularopciones.Text = "Calcular";
             this.btncalcularopciones.UseVisualStyleBackColor = true;
             this.btncalcularopciones.Click += new System.EventHandler(this.btncalcularopciones_Click);
-            // 
-            // optprimo
-            // 
-            this.optprimo.AutoSize = true;
-            this.optprimo.Location = new System.Drawing.Point(16, 253);
-            this.optprimo.Name = "optprimo";
-            this.optprimo.Size = new System.Drawing.Size(64, 21);
-            this.optprimo.TabIndex = 7;
-            this.optprimo.Text = "primo";
-            this.optprimo.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
