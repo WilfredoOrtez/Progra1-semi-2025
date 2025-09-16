@@ -16,106 +16,51 @@ namespace Program_I
         {
             InitializeComponent();
         }
-        
 
-        private void btncalcularopciones_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            double num1, num2, respuesta = 0;
-            num1 = double.Parse(txtnum1.Text);
-            num2 = double.Parse(txtnum2.Text);
-
-            switch (cboopciones.SelectedIndex)
-            {
-                case 0:
-                    respuesta = num1 + num2;
-                    break;
-
-                case 1:
-                    respuesta = num1 - num2;
-                    break;
-
-                case 2:
-                    respuesta = num1 * num2;
-                    break;
-
-                case 3:
-                    respuesta = num1 / num2;
-                    break;
-            }
-            lblrespuesta.Text = "respuesta: " + respuesta;
+            //Hacer un ejercicio en C# haciendo uso de matrices, estructuras de repeticion y condicionales, que 
+            //determine el sueldo neto a pagar a un empleado descontando las deducciones correspondientes de ley.
+            //isss, afp, isr.
         }
 
-        private void btncalcular_Click_1(object sender, EventArgs e)
+        private double[][] tablaIsr = {
+                new Double[] {0.01, 550, 0, 0},
+                new Double[] {550.01, 895.24, 0.10, 17.67},
+                new Double[] {895.25, 2038.10, 0.20, 60},
+                new Double[] {2038.11, 9999999, 0.30, 288.57}
+        };
+        private double calcularDeducciones(double sueldo, double porcentaje)
         {
-            double num1, num2, respuesta = 0;
-            num1 = Double.Parse(txtnum1.Text);
-            num2 = Double.Parse(txtnum2.Text);
-
-            if (optsuma.Checked)
+            return sueldo * porcentaje;
+        }
+        private double calcularIsr(double sueldo)
+        {
+            double isr = 0;
+            for (int i = 0; i < tablaIsr.Length; i++)
             {
-                respuesta = num1 + num2;
-            }
-
-            if (optresta.Checked)
-            {
-                respuesta = num1 - num2;
-            }
-
-            if (optmulti.Checked)
-            {
-                respuesta = num1 * num2;
-            }
-
-            if (optdivi.Checked)
-            {
-                respuesta = num1 / num2;
-            }
-
-            if (optexponente.Checked)
-            {
-                respuesta = Math.Pow(num1, num2);
-            }
-
-            if (optporcentaje.Checked)
-            {
-                respuesta = (num1 / num2) * 100;
-            }
-
-            if (optfacto.Checked)
-            {
-                respuesta = (int)num1;
-                for (int i = (int)num1; i > 1; i--)
+                if (sueldo >= tablaIsr[i][0] && sueldo <= tablaIsr[i][1])
                 {
-                    respuesta *= i;
+                    isr = (sueldo - tablaIsr[i][0]) * tablaIsr[i][2] + tablaIsr[i][3];
                 }
             }
+            return isr;
+        }
 
-            lblrespuesta.Text = "Respuesta: " + respuesta;
+        private void btnCalcular_Click_1(object sender, EventArgs e)
+        {
+            double sueldo = 0, isss = 0, afp = 0, isr = 0, sueldoNeto = 0;
+            sueldo = double.Parse(txtSueldo.Text);
+            isss = calcularDeducciones(sueldo, 0.03); // 3% de ISSS -> 3/100=0.03
+            afp = calcularDeducciones(sueldo, 0.0725); // 7.25% de AFP -> 7.25/100=0.0725
+            isr = calcularIsr(sueldo - isss - afp); // Calcular ISR
+            sueldoNeto = sueldo - isss - afp - isr; // Calcular sueldo neto
 
-            if (optprimo.Checked)
-            {
-                int i = 1, acum = 0;
-                while (i <= num1 & acum < 3)
-                {
-                    if (num1 % 1 == 0)
-                    {
-                        acum++;
-                    }
-                    i++;
-                }
-                if (acum <= 2)
-                {
-                    lblrespuesta.Text = "Respuesta" + num1 + " es primo";
-                }
-                else
-                {
-                    lblrespuesta.Text = "Respuesta" + num1 + " No es primo";
-                }
-
-            }
-
-            lblrespuesta.Text = "respuesta: " + respuesta;
+            lblIsss.Text = "ISSS: " + isss.ToString("C2");
+            lblAfp.Text = "AFP: " + afp.ToString("C2");
+            lblIsr.Text = "ISR: " + isr.ToString("C2");
+            lblTotalDeducciones.Text = "Total Deducciones: " + (isss + afp + isr).ToString("C2");
+            lblSueldoNeto.Text = "Sueldo Neto: " + sueldoNeto.ToString("C2");
         }
     }
-    
 }
