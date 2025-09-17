@@ -18,3 +18,13 @@ C:\Users\Baal8\Desktop\progra1-git\Program I\Program I\obj\Debug\Program I.cspro
 C:\Users\Baal8\Desktop\progra1-git\Program I\Program I\obj\Debug\Program I.csproj.CoreCompileInputs.cache
 C:\Users\Baal8\Desktop\progra1-git\Program I\Program I\obj\Debug\Program I.exe
 C:\Users\Baal8\Desktop\progra1-git\Program I\Program I\obj\Debug\Program I.pdb
+C:\Users\Baal8\Desktop\program\Program I\Program I\bin\Debug\Program I.exe.config
+C:\Users\Baal8\Desktop\program\Program I\Program I\bin\Debug\Program I.exe
+C:\Users\Baal8\Desktop\program\Program I\Program I\bin\Debug\Program I.pdb
+C:\Users\Baal8\Desktop\program\Program I\Program I\obj\Debug\Program I.csproj.AssemblyReference.cache
+C:\Users\Baal8\Desktop\program\Program I\Program I\obj\Debug\Program_I.Form1.resources
+C:\Users\Baal8\Desktop\program\Program I\Program I\obj\Debug\Program_I.Properties.Resources.resources
+C:\Users\Baal8\Desktop\program\Program I\Program I\obj\Debug\Program I.csproj.GenerateResource.cache
+C:\Users\Baal8\Desktop\program\Program I\Program I\obj\Debug\Program I.csproj.CoreCompileInputs.cache
+C:\Users\Baal8\Desktop\program\Program I\Program I\obj\Debug\Program I.exe
+C:\Users\Baal8\Desktop\program\Program I\Program I\obj\Debug\Program I.pdb

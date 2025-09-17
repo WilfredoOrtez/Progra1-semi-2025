@@ -29,21 +29,93 @@ namespace Program_I
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.lblSerie = new System.Windows.Forms.Label();
+            this.txtSerie = new System.Windows.Forms.TextBox();
+            this.lblMedia = new System.Windows.Forms.Label();
+            this.lblTipica = new System.Windows.Forms.Label();
+            this.lblArmonica = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Location = new System.Drawing.Point(492, 138);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(158, 125);
+            this.btnCalcular.TabIndex = 0;
+            this.btnCalcular.Text = "CALCULAR";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // lblSerie
+            // 
+            this.lblSerie.AutoSize = true;
+            this.lblSerie.Location = new System.Drawing.Point(30, 69);
+            this.lblSerie.Name = "lblSerie";
+            this.lblSerie.Size = new System.Drawing.Size(52, 17);
+            this.lblSerie.TabIndex = 1;
+            this.lblSerie.Text = "SERIE:";
+            // 
+            // txtSerie
+            // 
+            this.txtSerie.Location = new System.Drawing.Point(107, 69);
+            this.txtSerie.Name = "txtSerie";
+            this.txtSerie.Size = new System.Drawing.Size(297, 22);
+            this.txtSerie.TabIndex = 2;
+            // 
+            // lblMedia
+            // 
+            this.lblMedia.AutoSize = true;
+            this.lblMedia.Location = new System.Drawing.Point(36, 138);
+            this.lblMedia.Name = "lblMedia";
+            this.lblMedia.Size = new System.Drawing.Size(50, 17);
+            this.lblMedia.TabIndex = 3;
+            this.lblMedia.Text = "Media:";
+            // 
+            // lblTipica
+            // 
+            this.lblTipica.AutoSize = true;
+            this.lblTipica.Location = new System.Drawing.Point(36, 192);
+            this.lblTipica.Name = "lblTipica";
+            this.lblTipica.Size = new System.Drawing.Size(118, 17);
+            this.lblTipica.TabIndex = 4;
+            this.lblTipica.Text = "Desviacion tipica:";
+            // 
+            // lblArmonica
+            // 
+            this.lblArmonica.AutoSize = true;
+            this.lblArmonica.Location = new System.Drawing.Point(36, 255);
+            this.lblArmonica.Name = "lblArmonica";
+            this.lblArmonica.Size = new System.Drawing.Size(71, 17);
+            this.lblArmonica.TabIndex = 5;
+            this.lblArmonica.Text = "Armonica:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 407);
+            this.ClientSize = new System.Drawing.Size(672, 415);
+            this.Controls.Add(this.lblArmonica);
+            this.Controls.Add(this.lblTipica);
+            this.Controls.Add(this.lblMedia);
+            this.Controls.Add(this.txtSerie);
+            this.Controls.Add(this.lblSerie);
+            this.Controls.Add(this.btnCalcular);
             this.Name = "Form1";
-            this.Text = "CONVERSORES";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "ESTADISTICA";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Label lblSerie;
+        private System.Windows.Forms.TextBox txtSerie;
+        private System.Windows.Forms.Label lblMedia;
+        private System.Windows.Forms.Label lblTipica;
+        private System.Windows.Forms.Label lblArmonica;
     }
 }
 
