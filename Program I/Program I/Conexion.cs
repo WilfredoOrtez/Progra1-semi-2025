@@ -18,7 +18,7 @@ namespace Program_I
 
         public Conexion()
         { //Constructor. inicializador de los atributos
-            String cadenaConexion = "";
+            String cadenaConexion = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\db_academica.mdf;Integrated Security=True";
             objConexion.ConnectionString = cadenaConexion;
             objConexion.Open(); //Abrir la conexion a la BD
         }
@@ -33,6 +33,44 @@ namespace Program_I
             objAdaptador.Fill(objDs, "alumnos");//Tomando los datos de la BD y llenando el DataSet
 
             return objDs;
+        }
+        public string administrarDatosAlumnos(String[] datos, String accion)
+        {
+            String sql = "";
+            if (accion == "nuevo")
+            {
+                sql = "INSERT INTO alumnos(codigo,nombre,direccion,telefono) VALUES (@codigo, @nombre, @direccion, @telefono)";
+            }
+            else if (accion == "modificar")
+            {
+                sql = "UPDATE alumnos SET codigo=@codigo, nombre=@nombre, direccion=@direccion, telefono=@telefono WHERE idAlumno=@idAlumno";
+            }
+            else if (accion == "eliminar")
+            {
+                sql = "DELETE FROM alumnos WHERE idAlumno=@idAlumno";
+            }
+            return ejecutarSQL(sql, datos);
+        }
+        private String ejecutarSQL(String sql, String[] datos)
+        {
+            try
+            {
+                objComando.Connection = objConexion;
+                objComando.CommandText = sql;
+
+                objComando.Parameters.Clear();
+                objComando.Parameters.AddWithValue("@idAlumno", datos[0]);
+                objComando.Parameters.AddWithValue("@codigo", datos[1]);
+                objComando.Parameters.AddWithValue("@nombre", datos[2]);
+                objComando.Parameters.AddWithValue("@direccion", datos[3]);
+                objComando.Parameters.AddWithValue("@telefono", datos[4]);
+
+                return objComando.ExecuteNonQuery().ToString();
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
     }
 }
