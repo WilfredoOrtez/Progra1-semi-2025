@@ -37,6 +37,7 @@ namespace Program_I
             this.docenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.materiasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.periodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,8 +64,10 @@ namespace Program_I
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F4)));
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // aplicacionesToolStripMenuItem
             // 
@@ -72,14 +75,17 @@ namespace Program_I
             this.alumnosToolStripMenuItem,
             this.docenteToolStripMenuItem,
             this.materiasToolStripMenuItem,
-            this.periodosToolStripMenuItem});
+            this.periodosToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.aplicacionesToolStripMenuItem.Name = "aplicacionesToolStripMenuItem";
             this.aplicacionesToolStripMenuItem.Size = new System.Drawing.Size(107, 24);
             this.aplicacionesToolStripMenuItem.Text = "Aplicaciones";
             // 
             // alumnosToolStripMenuItem
             // 
+            this.alumnosToolStripMenuItem.Image = global::Program_I.Properties.Resources.Alumno;
             this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
+            this.alumnosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.alumnosToolStripMenuItem.Text = "Alumnos";
             this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click);
@@ -87,12 +93,13 @@ namespace Program_I
             // docenteToolStripMenuItem
             // 
             this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
-            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.docenteToolStripMenuItem.Text = "Docente";
             // 
             // materiasToolStripMenuItem
             // 
             this.materiasToolStripMenuItem.Name = "materiasToolStripMenuItem";
+            this.materiasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
             this.materiasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.materiasToolStripMenuItem.Text = "Materias";
             this.materiasToolStripMenuItem.Click += new System.EventHandler(this.materiasToolStripMenuItem_Click);
@@ -100,9 +107,15 @@ namespace Program_I
             // periodosToolStripMenuItem
             // 
             this.periodosToolStripMenuItem.Name = "periodosToolStripMenuItem";
+            this.periodosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.periodosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.periodosToolStripMenuItem.Text = "Periodos";
             this.periodosToolStripMenuItem.Click += new System.EventHandler(this.periodosToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 6);
             // 
             // frmPrincipal
             // 
@@ -131,5 +144,6 @@ namespace Program_I
         private System.Windows.Forms.ToolStripMenuItem docenteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem materiasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem periodosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
     }
 }

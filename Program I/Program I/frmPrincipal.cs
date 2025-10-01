@@ -36,5 +36,10 @@ namespace Program_I
             frmPeriodos objAlumnos = new frmPeriodos();
             objAlumnos.Show();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
