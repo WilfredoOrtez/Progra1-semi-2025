@@ -32,6 +32,9 @@ namespace Program_I
             objComando.CommandText = "SELECT * FROM alumnos";
             objAdaptador.Fill(objDs, "alumnos");//Tomando los datos de la BD y llenando el DataSet
 
+            objComando.CommandText = "SELECT * FROM materias";
+            objAdaptador.Fill(objDs, "materias");//Tomando los datos de la BD y llenando el DataSet
+
             return objDs;
         }
         public string administrarDatosAlumnos(String[] datos, String accion)
@@ -39,15 +42,32 @@ namespace Program_I
             String sql = "";
             if (accion == "nuevo")
             {
-                sql = "INSERT INTO alumnos(codigo,nombre,direccion,telefono) VALUES (@codigo, @nombre, @direccion, @telefono)";
+                sql = "INSERT INTO alumnos(codigo,nombre,direccion,telefono) VALUES ('" + datos[1] + "', '" + datos[2] + "', '" + datos[3] + "', '" + datos[4] + "')";
             }
             else if (accion == "modificar")
             {
-                sql = "UPDATE alumnos SET codigo=@codigo, nombre=@nombre, direccion=@direccion, telefono=@telefono WHERE idAlumno=@idAlumno";
+                sql = "UPDATE alumnos SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', direccion='" + datos[3] + "', telefono='" + datos[4] + "' WHERE idAlumno='" + datos[0] + "'";
             }
             else if (accion == "eliminar")
             {
-                sql = "DELETE FROM alumnos WHERE idAlumno=@idAlumno";
+                sql = "DELETE FROM alumnos WHERE idAlumno='" + datos[0] + "'";
+            }
+            return ejecutarSQL(sql, datos);
+        }
+        public string administrarDatosMaterias(String[] datos, String accion)
+        {
+            String sql = "";
+            if (accion == "nuevo")
+            {
+                sql = "INSERT INTO materias(codigo,nombre,uv) VALUES ('" + datos[1] + "', '" + datos[2] + "', '" + datos[3] + "')";
+            }
+            else if (accion == "modificar")
+            {
+                sql = "UPDATE materias SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', uv='" + datos[3] + "' WHERE idMateria='" + datos[0] + "'";
+            }
+            else if (accion == "eliminar")
+            {
+                sql = "DELETE FROM materias WHERE idMateria='" + datos[0] + "'";
             }
             return ejecutarSQL(sql, datos);
         }
@@ -57,13 +77,6 @@ namespace Program_I
             {
                 objComando.Connection = objConexion;
                 objComando.CommandText = sql;
-
-                objComando.Parameters.Clear();
-                objComando.Parameters.AddWithValue("@idAlumno", datos[0]);
-                objComando.Parameters.AddWithValue("@codigo", datos[1]);
-                objComando.Parameters.AddWithValue("@nombre", datos[2]);
-                objComando.Parameters.AddWithValue("@direccion", datos[3]);
-                objComando.Parameters.AddWithValue("@telefono", datos[4]);
 
                 return objComando.ExecuteNonQuery().ToString();
             }
