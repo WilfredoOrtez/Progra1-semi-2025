@@ -16,7 +16,7 @@ namespace Program_I
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMaterias());
+            Application.Run(new frmPrincipal());
         }
     }
 }

@@ -23,5 +23,18 @@ namespace Program_I
             objAlumnos.MdiParent = this;
             objAlumnos.Show();
         }
+
+        private void materiasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMaterias objAlumnos = new frmMaterias();
+            objAlumnos.MdiParent = this;
+            objAlumnos.Show();
+        }
+
+        private void periodosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPeriodos objAlumnos = new frmPeriodos();
+            objAlumnos.Show();
+        }
     }
 }

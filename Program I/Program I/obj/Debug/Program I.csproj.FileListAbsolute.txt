@@ -43,3 +43,4 @@ C:\Users\Baal8\Desktop\claseprogram\Program I\Program I\obj\Debug\Program I.pdb
 C:\Users\Baal8\Desktop\claseprogram\Program I\Program I\obj\Debug\Program_I.frmPrincipal.resources
 C:\Users\Baal8\Desktop\claseprogram\Program I\Program I\obj\Debug\Program_I.Form2.resources
 C:\Users\Baal8\Desktop\claseprogram\Program I\Program I\obj\Debug\Program_I.frmMaterias.resources
+C:\Users\Baal8\Desktop\claseprogram\Program I\Program I\obj\Debug\Program_I.frmPeriodos.resources
