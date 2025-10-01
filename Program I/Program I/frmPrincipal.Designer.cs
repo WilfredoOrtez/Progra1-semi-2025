@@ -93,8 +93,9 @@ namespace Program_I
             // docenteToolStripMenuItem
             // 
             this.docenteToolStripMenuItem.Name = "docenteToolStripMenuItem";
-            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
+            this.docenteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.docenteToolStripMenuItem.Text = "Docente";
+            this.docenteToolStripMenuItem.Click += new System.EventHandler(this.docenteToolStripMenuItem_Click);
             // 
             // materiasToolStripMenuItem
             // 

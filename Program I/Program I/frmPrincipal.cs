@@ -37,9 +37,18 @@ namespace Program_I
             objAlumnos.Show();
         }
 
+        private void docenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 objAlumnos = new Form2();
+            objAlumnos.MdiParent = this;
+            objAlumnos.Show();
+        }
+
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+        
     }
 }

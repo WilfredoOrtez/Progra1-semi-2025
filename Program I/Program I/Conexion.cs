@@ -35,6 +35,9 @@ namespace Program_I
             objComando.CommandText = "SELECT * FROM materias";
             objAdaptador.Fill(objDs, "materias");//Tomando los datos de la BD y llenando el DataSet
 
+            objComando.CommandText = "SELECT * FROM Profesor";
+            objAdaptador.Fill(objDs, "Profesor");//Tomando los datos de la BD y llenando el DataSet
+
             return objDs;
         }
         public string administrarDatosAlumnos(String[] datos, String accion)
@@ -71,6 +74,25 @@ namespace Program_I
             }
             return ejecutarSQL(sql, datos);
         }
+
+        public string administrarDatosProfesores(String[] datos, String accion)
+        {
+            String sql = "";
+            if (accion == "nuevo")
+            {
+                sql = "INSERT INTO Profesor(codigo,nombre,direccion,telefono) VALUES ('" + datos[1] + "', '" + datos[2] + "', '" + datos[3] + "', '" + datos[4] + "')";
+            }
+            else if (accion == "modificar")
+            {
+                sql = "UPDATE materias SET codigo='" + datos[1] + "', nombre='" + datos[2] + "', dirrecion='" + datos[3] + "' , telefono='" + datos[4] + "' WHERE idProfesor='" + datos[0] + "'";
+            }
+            else if (accion == "eliminar")
+            {
+                sql = "DELETE FROM Profesor WHERE idProfesor='" + datos[0] + "'";
+            }
+            return ejecutarSQL(sql, datos);
+        }
+
         private String ejecutarSQL(String sql, String[] datos)
         {
             try

@@ -49,7 +49,7 @@ namespace Program_I
             }
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form2_Load_1(object sender, EventArgs e)
         {
             actualizarDs();
         }
@@ -230,5 +230,7 @@ namespace Program_I
         {
             seleccionarProfesor();
         }
+
+        
     }
 }

@@ -379,6 +379,7 @@ namespace Program_I
             this.Controls.Add(this.grbDatosProfesor);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load_1);
             this.grbBusquedaProfesor.ResumeLayout(false);
             this.grbBusquedaProfesor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdProfesor)).EndInit();
