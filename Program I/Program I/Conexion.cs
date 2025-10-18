@@ -11,9 +11,9 @@ namespace Program_I
     class Conexion
     {
         //Definir los miembros de la clase, atributos y metodos.
-        SqlConnection objConexion = new SqlConnection(); //Conectarme a la BD.
-        SqlCommand objComando = new SqlCommand(); //Ejecutar SQL en la BD. Lectura, Actualizacion, Eliminacion, Insercion.
-        SqlDataAdapter objAdaptador = new SqlDataAdapter(); //un puente entre la BD y la aplicacion.
+        public SqlConnection objConexion = new SqlConnection(); //Conectarme a la BD.
+        public SqlCommand objComando = new SqlCommand(); //Ejecutar SQL en la BD. Lectura, Actualizacion, Eliminacion, Insercion.
+        public SqlDataAdapter objAdaptador = new SqlDataAdapter(); //un puente entre la BD y la aplicacion.
         DataSet objDs = new DataSet(); //Es una representacion de la arquitectura de la BD en memoria.
 
         public Conexion()
@@ -38,6 +38,9 @@ namespace Program_I
             objComando.CommandText = "SELECT * FROM Profesor";
             objAdaptador.Fill(objDs, "Profesor");//Tomando los datos de la BD y llenando el DataSet
 
+            
+            objAdaptador.Fill(objDs, "Profesor");//Tomando los datos de la BD y llenando el DataSet
+
             return objDs;
         }
         public string administrarDatosAlumnos(String[] datos, String accion)
@@ -55,7 +58,7 @@ namespace Program_I
             {
                 sql = "DELETE FROM alumnos WHERE idAlumno='" + datos[0] + "'";
             }
-            return ejecutarSQL(sql, datos);
+            return ejecutarSQL(sql);
         }
         public string administrarDatosMaterias(String[] datos, String accion)
         {
@@ -72,7 +75,7 @@ namespace Program_I
             {
                 sql = "DELETE FROM materias WHERE idMateria='" + datos[0] + "'";
             }
-            return ejecutarSQL(sql, datos);
+            return ejecutarSQL(sql);
         }
 
         public string administrarDatosProfesores(String[] datos, String accion)
@@ -90,10 +93,10 @@ namespace Program_I
             {
                 sql = "DELETE FROM Profesor WHERE idProfesor='" + datos[0] + "'";
             }
-            return ejecutarSQL(sql, datos);
+            return ejecutarSQL(sql);
         }
 
-        private String ejecutarSQL(String sql, String[] datos)
+        public String ejecutarSQL(String sql)
         {
             try
             {

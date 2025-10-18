@@ -26,22 +26,22 @@ namespace Program_I
 
         private void materiasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmMaterias objAlumnos = new frmMaterias();
-            objAlumnos.MdiParent = this;
-            objAlumnos.Show();
+            frmMaterias objMateria = new frmMaterias();
+            objMateria.MdiParent = this;
+            objMateria.Show();
         }
 
         private void periodosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPeriodos objAlumnos = new frmPeriodos();
-            objAlumnos.Show();
+            frmPeriodos objPeriodo = new frmPeriodos();
+            objPeriodo.Show();
         }
 
         private void docenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 objAlumnos = new Form2();
-            objAlumnos.MdiParent = this;
-            objAlumnos.Show();
+            Form2 objProfesor = new Form2();
+            objProfesor.MdiParent = this;
+            objProfesor.Show();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,6 +49,11 @@ namespace Program_I
             Close();
         }
 
-        
+        private void notasToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            frmNotas objNota = new frmNotas();
+            objNota.MdiParent = this;
+            objNota.Show();
+        }
     }
 }
