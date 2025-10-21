@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\webappacademica.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\webappacademica.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Alumno.cs",
+              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Models\\Alumno.cs",
+              "RelativeDocumentMoniker": "webappacademica\\Models\\Alumno.cs",
+              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Models\\Alumno.cs",
+              "RelativeToolTip": "webappacademica\\Models\\Alumno.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T14:26:13.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Program.cs",
+              "RelativeDocumentMoniker": "webappacademica\\Program.cs",
+              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Program.cs",
+              "RelativeToolTip": "webappacademica\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T13:48:50.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "webappacademica.csproj",
+              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\webappacademica.csproj",
+              "RelativeDocumentMoniker": "webappacademica\\webappacademica.csproj",
+              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\webappacademica.csproj",
+              "RelativeToolTip": "webappacademica\\webappacademica.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-19T14:23:21.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "webappacademica\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "webappacademica\\Models\\MyDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T14:20:51.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\appsettings.json",
+              "RelativeDocumentMoniker": "webappacademica\\appsettings.json",
+              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\appsettings.json",
+              "RelativeToolTip": "webappacademica\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-19T14:14:39.744Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

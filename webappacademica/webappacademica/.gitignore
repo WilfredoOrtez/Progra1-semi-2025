@@ -1,0 +1,27 @@
+## Archivos de Visual Studio
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+
+## Archivos de compilación
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+## Archivos de publicación
+publish/
+
+## Base de datos local
+*.mdf
+*.ldf
+
+## Logs
+*.log
+logs/
+
+## Node.js (si usas JavaScript)
+node_modules/
