@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\wwwroot\\views\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\wwwroot\\views\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\webappacademica.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\webappacademica.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\controllers\\alumnoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\controllers\\alumnoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\models\\alumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|c:\\users\\baal8\\desktop\\claseprogram\\webappacademica\\webappacademica\\webappacademica.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4579B142-E5E3-4F46-AEFA-C9B2038BC891}|webappacademica\\webappacademica.csproj|solutionrelative:webappacademica\\webappacademica.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,19 +43,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Alumno.cs",
-              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Models\\Alumno.cs",
-              "RelativeDocumentMoniker": "webappacademica\\Models\\Alumno.cs",
-              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Models\\Alumno.cs",
-              "RelativeToolTip": "webappacademica\\Models\\Alumno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T14:26:13.107Z",
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\wwwroot\\views\\index.html",
+              "RelativeDocumentMoniker": "webappacademica\\wwwroot\\views\\index.html",
+              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\wwwroot\\views\\index.html",
+              "RelativeToolTip": "webappacademica\\wwwroot\\views\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-28T22:48:35.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "AlumnosController.cs",
+              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Controllers\\AlumnosController.cs",
+              "RelativeDocumentMoniker": "webappacademica\\Controllers\\AlumnosController.cs",
+              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Controllers\\AlumnosController.cs",
+              "RelativeToolTip": "webappacademica\\Controllers\\AlumnosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T22:29:55.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Alumno.cs",
+              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Models\\Alumno.cs",
+              "RelativeDocumentMoniker": "webappacademica\\Models\\Alumno.cs",
+              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Models\\Alumno.cs",
+              "RelativeToolTip": "webappacademica\\Models\\Alumno.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T14:26:13.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\Program.cs",
               "RelativeDocumentMoniker": "webappacademica\\Program.cs",
@@ -59,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "webappacademica.csproj",
               "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\webappacademica.csproj",
               "RelativeDocumentMoniker": "webappacademica\\webappacademica.csproj",
@@ -83,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\webappacademica\\webappacademica\\appsettings.json",
               "RelativeDocumentMoniker": "webappacademica\\appsettings.json",
