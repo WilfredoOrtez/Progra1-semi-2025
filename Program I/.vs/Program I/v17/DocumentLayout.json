@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Baal8\\Desktop\\claseprogram\\Program I\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A0ED33-41AE-4A1A-AA5B-BE30B9CF9A14}|Program I\\Program I.csproj|c:\\users\\baal8\\desktop\\claseprogram\\program i\\program i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8A0ED33-41AE-4A1A-AA5B-BE30B9CF9A14}|Program I\\Program I.csproj|solutionrelative:program i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A0ED33-41AE-4A1A-AA5B-BE30B9CF9A14}|Program I\\Program I.csproj|C:\\Users\\Baal8\\Desktop\\claseprogram\\Program I\\program i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8A0ED33-41AE-4A1A-AA5B-BE30B9CF9A14}|Program I\\Program I.csproj|solutionrelative:program i\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8A0ED33-41AE-4A1A-AA5B-BE30B9CF9A14}|Program I\\Program I.csproj|C:\\Users\\Baal8\\Desktop\\claseprogram\\Program I\\program i\\conexion_base_datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8A0ED33-41AE-4A1A-AA5B-BE30B9CF9A14}|Program I\\Program I.csproj|solutionrelative:program i\\conexion_base_datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Conexion_base_datos.cs",
+              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\Program I\\Program I\\Conexion_base_datos.cs",
+              "RelativeDocumentMoniker": "Program I\\Conexion_base_datos.cs",
+              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\Program I\\Program I\\Conexion_base_datos.cs",
+              "RelativeToolTip": "Program I\\Conexion_base_datos.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T15:11:31.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\Program I\\Program I\\Form1.cs",
+              "RelativeDocumentMoniker": "Program I\\Form1.cs",
+              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\Program I\\Program I\\Form1.cs",
+              "RelativeToolTip": "Program I\\Form1.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAQwI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T15:08:58.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Baal8\\Desktop\\claseprogram\\Program I\\Program I\\Form1.cs",
+              "RelativeDocumentMoniker": "Program I\\Form1.cs",
+              "ToolTip": "C:\\Users\\Baal8\\Desktop\\claseprogram\\Program I\\Program I\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Program I\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T15:06:28.244Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
